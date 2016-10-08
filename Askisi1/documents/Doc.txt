@@ -1,0 +1,8 @@
+The more robust option would be to take the path to the file as an argument to the program, and pass that as the first argument to fopen. The simplest example would be to just use argv[1] from main's parameters, i.e.
+
+int main(int argc, char **argv)
+{
+    FILE *my_file = fopen(argv[1], "r");
+    /* ... */
+    return 0;
+}
