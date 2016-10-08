@@ -1,5 +1,7 @@
 #include "skiplist.h"
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 
 
 
@@ -46,15 +48,9 @@ struct node *skip_initialization()
 }
 
 
-int randomlevel()
+int randomLevel()
 {
-    int h,i;
-    srand(time(NULL));
-      do
-      {
-           h=rand();
-           printf("%d\n",h);
-      }while(h<0 || (h>MaxLevel-1));
-      return h;
+        srand(time(NULL));                              //Seed using the current time
+        return rand()%(MaxLevel - 1);                   //Generates a random number in the space 0 to MaxLevel-1
 }
 

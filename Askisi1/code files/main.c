@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
   
      header=skiplistfunction(initialization);
      clear(command);      
-     fp=fopen ("C:/Users/Tassos/Desktop/os_/30+.in.TXT","r"); /*anoigma arxeiou */
-     printf("%d\n",randomlevel());
+     printf("%d\n",randomLevel());
+     fp=fopen ("../txt files/30+.in.TXT","r"); /*anoigma arxeiou */
        
 	 
 	 while (1)
@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
         }
 		printf("%s",command);
  
+       							//fgets(command, sizeof (command), stdin);
        switch (find_command(command))
        {
             case (i):
@@ -79,7 +80,6 @@ int main(int argc, char *argv[])
     }
     fclose(fp);/* kleisimo arxeiou*/
     printf("end");
-    system("PAUSE");	
     return 0;
 }
 

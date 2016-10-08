@@ -9,7 +9,7 @@
 
 struct node *skiplistfunction(int);
 struct node *skip_initialization();
-int randomlevel();
+int randomLevel();
 
 
 struct node
