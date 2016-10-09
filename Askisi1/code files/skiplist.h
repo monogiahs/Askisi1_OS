@@ -7,15 +7,17 @@
 
 
 
-struct node *skiplistfunction(int);
-struct node *skip_initialization();
+struct skiplist_node *skiplistfunction(int);
+struct skiplist_node *skiplist_initialization();
+void skiplist_insertion(struct skiplist_node* , int, int);
 int randomLevel();
 
 
-struct node
+struct skiplist_node					//Basiki domi tis skiplist
 {
-       int key;
-       struct node* forward[MaxLevel];
+       	int key;
+	int value;     
+      	struct skiplist_node* forward[MaxLevel];
 };
 
 enum instructions{

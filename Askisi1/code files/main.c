@@ -35,6 +35,8 @@ int main(int argc, char *argv[])
        {
             case (i):
                 puts("insert");
+		//Edo pera tha kanoume malloc gia tin domi tou neou mathiti
+		//skiplist_insertion(header, 17,15555 );
                 break;
             case (q):
                 puts("query");
