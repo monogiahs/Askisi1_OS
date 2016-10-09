@@ -14,11 +14,11 @@ int main(int argc, char *argv[])
      struct node *header ;
   
      header=skiplistfunction(initialization);
-     clear(command);      
+     clear(command);
      printf("%d\n",randomLevel());
-     fp=fopen ("../txt files/30+.in.txt","r"); /*anoigma arxeiou */
-       
-	 
+     fp=fopen(argv[1], "r");  /*anoigma arxeiou */
+      
+
 	 while (1)
 	 {
         cnt=0;
